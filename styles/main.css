@@ -1,0 +1,402 @@
+@import url('../styles/fonts.css');
+
+html, body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+
+  /* Theme colors */
+  --text-gray:#3f4954;
+  --text-light: #686666da;
+  --bg-color: #0f0f0f;
+  --white: #fffff;
+  --midnight: #104f55;
+
+  /* gradient color */
+  --sky: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+
+/* theme font-family */
+--MonoSpace:'MonoSpace',cursive;
+}
+/*-----------Global Classess-----------*/
+a {
+  text-decoration: none;
+  color:var(--text-gray);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1{
+  font-family: var(--MonoSpace);
+  font-size: 2.5rem;
+}
+h2{
+  font-family: var(--MonoSpace);
+}
+
+h3{
+ font-family: var(--MonoSpace);
+ font-size: 1.3rem; 
+}
+
+button.btn{
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: var(--MonoSpace);
+  cursor: pointer;
+}
+
+
+/*-----x------Global Classess-----x------*/
+
+/*----------navbar----------*/
+.nav {
+  background: white;
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+  transition:height 1s ease-in-out;
+}
+
+.nav .nav-menu {
+  justify-content: space-between;
+}
+.nav .toggle-collapse{
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display:none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+  font-size: 1.4rem;
+  color:var(--text-gray)
+}
+
+.collapse{
+  height:30rem;
+}
+
+.nav .nav-items {
+  display: flex;
+  margin: 0;
+}
+
+.nav .nav-items .nav-link {
+  padding: 1.6rem 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  font-family: var(--MonoSpace);
+  font-size: 1.1rem;
+
+}
+
+.nav .nav-items .nav-link:hover{
+  background-color:lightgray;
+  /*background-color: var(--midnight);*/
+}
+
+.nav .nav-items .nav-link:hover a{
+  color: white;
+}
+
+.nav .nav-brand a {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  display: block;
+  font-family: var(--MonoSpace);
+  font-size: 1.6rem;
+  
+}
+
+.nav .social {
+  padding: 1.4rem 0;
+}
+
+.nav .social i{
+  padding:0 .2rem;
+}
+
+.nav .social i:hover{
+  color: #a1c4cf;
+}
+/*------x----navbar----x------*/
+
+
+
+/*--------Main Content----------------*/
+
+
+/*----------- Site title----------*/
+main .site-title{
+    background: url('../assets/earth-from-the-moon-img-1.jpg');
+    background-size:cover;
+    height:110vh;
+    display:flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+  padding-top:10rem;
+  text-align:center;
+  color:white;
+  /* color:var(--white); */
+}
+
+main .site-title h1, h3{
+  margin:.3rem;
+
+}
+
+main .site-title .btn{
+  margin:1.8rem;
+  background:var(--sky);
+}
+
+main .site-title .btn:hover{
+  background: transparent;
+  border: 1px solid var(--white);
+  color:var(--white);
+}
+/*----------- Site title----------*/
+
+
+/*-------x-Main Content-x-------*/
+
+/*-----Footer-----------*/
+footer.footer{
+  height: 100%;
+  background:var(--bg-color);
+  position: relative;
+}
+
+footer.footer .container{
+  display: grid;
+  /*--- grid-template-columns: 25% 25% 25% 25%; */
+  grid-template-columns:repeat(4, 1fr);
+}
+
+footer.footer .container > div{
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+  color:white;  /*--- color:var(--white);---*/
+}
+footer.footer .rights h4{
+  color:white;  /*--- color:var(--white);---*/
+}
+
+footer.footer .container p{
+  color:white;  /*--- color:var(--white);---*/
+}
+footer.footer .instagram div > img{
+  display:inline-block;
+  width:25%;
+  height:50%;
+  margin:.3rem .4rem; 
+}
+
+footer.footer .follow div i{
+  color:white;
+  padding: 0 .4rem;
+  
+}
+
+footer.footer .rights{
+  justify-content: center;
+  font-family: var(MonoSpace);
+}
+
+footer.footer .move-up{
+  position: absolute;
+  right: 6%;
+  top: 50%;
+}
+
+footer.footer .move-up span{
+  color: midnightblue;
+
+}
+
+footer.footer .move-up span:hover{
+  color: white;
+  cursor: pointer;
+}
+
+/*----x--Footer------*/
+
+
+/* Viewport less then or equal to 750px */
+
+@media only screen and (max-width:750px){
+  .nav .nav-menu, .nav .nav-items{
+    flex-direction: column; 
+  }
+  .nav .toggle-collapse{
+    display: initial;
+  }
+}
+
+/*  x Viewport less then or equal to 750px  x   */
+
+
+
+/*----#########-Blog Homepage---######--*/
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: poppins;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+
+}
+ul{
+  list-style: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: poppins;
+}
+
+/*##########--BLOG--#########*/
+#blog{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  padding: 40px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.blog-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.blog-heading span{
+  color: #f33c3c;
+}
+.blog-heading h3{
+  font-size: 2.4rem;
+  color:#2b2b2b; 
+  font-weight: 600;
+}
+
+.blog-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+
+}
+.blog-box{
+  width:350px;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  margin:20px;
+}
+
+.blog-img{
+  width:100%;
+  height: auto;
+}
+.blog-img img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-text{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.blog-text span{
+  color: #f33c3c;
+  font-size: 0.9rem;
+}
+
+.blog-text .blog-title{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #272727;
+}
+
+.blog-text .blog-title:hover{
+  color: #f33c3c;
+  transition: all ease 0.3s;
+}
+.blog-text p{
+  color: #9b9b9b;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+}
+.blog-text a{
+  color: #0f0f0f;
+}
+.blog-text a:hover{
+  color: #f33c3c;
+  transition: all ease 0.3s;
+}
+
+@media(max-width:1250px){
+  .blog-box {
+    width: 300px;
+  }
+}
+
+@media(max-width:1100px){
+  .blog-box{
+    width: 70%;
+  }
+}
+@media(max-width:550px){
+  .blog-box{
+    margin: 20px 10px;
+    width: 100%;
+  }
+
+#blog{
+  padding: 20px;
+  }
+}
+
+/*---x-- Blog Homepage -x---- */
+
+
