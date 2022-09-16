@@ -6,7 +6,15 @@
 <link rel="stylesheet" type="text/css" href="../styles/header.css"/>
 <link rel="stylesheet" type="text/css" href="../styles/footer.css"/>
 <link rel="stylesheet" type="text/css" href="../styles/post.css"/>
+<link rel="stylesheet" type="text/css" href="../styles/html-css-markdown.css"/>
+
+
+
 <!--#####-STYLE-#####-->
+
+<style>
+  
+</style>
 <title>HTML | CSS</title>
 </head>
 
@@ -48,32 +56,100 @@
   
   <!-- blog content goes below -->
   <div class="blog-post-body-content">
+    
     <h2>What does it mean to display inline vs inline blocks?</h2>
-    <h3>display: inline-block</h3>
-    <p>display: inline-block allows to set a width and height on the element, the top and bottom margins/paddings are respected, but not with display: inline</p>
-    <p>For example, the following code shows that when we use display: inline-block, it display items side by side.</p>
-    <h3>Example 1</h3>
-    <h4>Code#1</h4>
-    <img src="../assets/screenshots/inline-block-list-items-horizontally-code.png">
-    <h4>Code-output#1</h4>
-    <img src="../assets/screenshots/inline-block-list-items-horizontally.png">
 
+    <!-- mark down -->
+    <div class="Markdown_markdown__7Dog_"> 
 
-    <h3>Example 2</h3>
-    <h4>Code#2</h4>
-    <img src="../assets/screenshots/display-property-code.png">
-    <h4>Code-output#2</h4>
-    <img src="../assets/screenshots/display-property-output.png">
+    
+    
+    <h3 id="introduction">Introduction</h3>
+    <p><strong>display: inline-block</strong> brought a new way to create side by side boxes that collapse and wrap properly depending on the available space in the containing element. It makes layouts that were previously accomplished with floats easier to create. No need to clear floats anymore.</p>
+    <p>Compared to <mark>display: inline</mark>, the major difference is that <strong>inline-block</strong> allows to set a width and height on the element. Also, with <mark>display: inline</mark>, top and bottom margins &amp; paddings are not respected, and with <mark>display: inline-block</mark> they are.</p>
+    <p>Now, the difference between <mark>display: inline-block</mark> and <mark>display: block</mark> is that, with <strong>display: block</strong>, a line break happens after the element, so a block element doesn’t sit next to other elements. Here are some visual examples:</p>
+    
+    <h2 id="display-inline">display: inline</h2>
+    <p>Notice here how the width and height are not respected, and how the padding top and bottom are present, but overlap over the lines above and under.</p>
+    <pre class="language-css"><code><span class="token selector">span.box</span> <span class="token punctuation">{</span>
+      <span class="token property">display</span><span class="token punctuation">:</span> inline<span class="token punctuation">;</span> <span class="token comment">/* the default for span */</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> 160px<span class="token punctuation">;</span>
+      <span class="token property">padding</span><span class="token punctuation">:</span> 18px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    </code></pre>
 
+    <div class="demo_box"><p>Cheese and wine ricotta danish fontina. Brie cheesy grin paneer squirty cheese taleggio cheesecake <span class="alligator-show-box" style="display: inline; width: 100px; height: 160px; padding: 18px;">goat taleggio</span> <span class="alligator-show-box" style="display: inline; width: 100px; height: 160px; padding: 18px;">goat taleggio</span>. Bavarian bergkase emmental fromage cheesecake cheese slices cheesy grin queso caerphilly.</p></div>
+    <h2 id="display-inline-block">display: inline-block</h2>
+    <p>Here the width, height and padding are respected, but the two copies of the element can still sit side by side.</p>
+    <pre class="language-css"><code><span class="token selector">span.box</span> <span class="token punctuation">{</span>
+      <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> 160px<span class="token punctuation">;</span>
+      <span class="token property">padding</span><span class="token punctuation">:</span> 18px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    </code></pre>
+
+    <div class="demo_box"><p>Cheese and wine ricotta danish fontina. Brie cheesy grin paneer squirty cheese taleggio cheesecake <span class="alligator-show-box" style="display: inline-block; width: 100px; height: 160px; padding: 18px;">goat taleggio</span> <span class="alligator-show-box" style="display: inline-block; width: 100px; height: 160px; padding: 18px;">goat taleggio</span>. Bavarian bergkase emmental fromage cheesecake cheese slices cheesy grin queso caerphilly.</p></div>
+    <h2 id="display-block">display: block</h2>
+    <p>Here again everything is respected, but the elements don’t sit side by side.</p>
+    <pre class="language-css"><code><span class="token selector">span.box</span> <span class="token punctuation">{</span>
+      <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> 160px<span class="token punctuation">;</span>
+      <span class="token property">padding</span><span class="token punctuation">:</span> 18px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    </code></pre>
+    <div class="demo_box"><p>Cheese and wine ricotta danish fontina. Brie cheesy grin paneer squirty cheese taleggio cheesecake <span class="alligator-show-box" style="display: block; width: 100px; height: 160px; padding: 18px;">goat taleggio</span> <span class="alligator-show-box" style="display: block; width: 100px; height: 160px; padding: 18px;">goat taleggio</span>. Bavarian bergkase emmental fromage cheesecake cheese slices cheesy grin queso caerphilly.</p></div>
+    <style>
+    .demo_box { border: 2px dashed rgba(114, 186, 94, 0.35); background: rgba(114, 186, 94, 0.05); padding:16px; display:flow-root; }
+    span.box {
+      display: inline; /* the default for span */
+      width: 100px;
+      height: 160px;
+      padding: 18px;
+    }
+    span.box {
+      display: inline-block;
+      width: 100px;
+      height: 160px;
+      padding: 18px;
+    }
+    span.box {
+      display: block;
+      width: 100px;
+      height: 160px;
+      padding: 18px;
+    }
+    .alligator-show-box {
+        border-radius: 6px;
+        border: 2px dashed blue;
+        max-width: 70%;
+        padding: 1em;
+        margin-bottom: .4em;
+        background: whitesmoke;
+    }
+    </style>
+    </div>
+    
     <div class="about-section"> <!-- using about CSS IDs-->
-      <h5>Sources:</h5>
+      <h5>Source:</h5>
+      <ul>
+        <li><a href="https://www.digitalocean.com/community/tutorials/css-display-inline-vs-inline-block" target="_blank">Inline vs Inline-Block Display in CSS</a> – A guide and example for The display Property.</li>
+      </ul>
+    </div> 
+
+
+    
+    <div class="about-section"> <!-- using about CSS IDs-->
+      <h5>Want to learn more?</h5>
       <ul>
         <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_nav" target="_blank">W3Schools: inline-block nav</a> – A guide and example for inline-block with navigation.</li>
         <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1" target="_blank">W3Schools: The display Property</a> – A guide and example for The display Property.</li>
-        
-
+        <li><a href="https://www.taniarascia.com/overview-of-css-concepts/#layouts-display" target="_blank">Tania Rascia</a> – A Complete Guide to CSS Concepts and Fundamentals.</li>
       </ul>
-    </div>
+    </div> 
+    </div> <!-- mark down -->
 
   </div>
   <!-- blog content goes above -->
