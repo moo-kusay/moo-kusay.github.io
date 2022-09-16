@@ -1,143 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moo The Stargazer | Lover of all things</title>
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="styles/all.css">
-  <!-- Custom Style -->
-  <link rel="stylesheet" href="styles/main.css">
+<!--#####-STYLE-#####-->
+<link rel="stylesheet" type="text/css" href="./styles/layout.css"/>
+<link rel="stylesheet" type="text/css" href="./styles/header.css"/>
+<link rel="stylesheet" type="text/css" href="./styles/footer.css"/>
+<link rel="stylesheet" type="text/css" href="./styles/homepage.css"/>
+<!--#####-STYLE-#####-->
+
+<title>Earth is Home!</title>
 
 </head>
+
 <body>
+ <!--######-LAYOUT-START-#####-->
+ <div class="layout-wrapper">
 
-  <!---------------------------- Navigation ------------------------------>
-<nav class="nav">
-  <div class="nav-menu flex-row">
-    <div class="nav-brand">
-      <a href="index.html" class="text-gray">MOO THE STARGAZER</a>
-    </div>
-    <div class="toggle-collapse">
-      <div class="toggle-icons">
-      <i class="fas fa-bars"></i>
+  <!--Header-Start-->
+    <header class="header-wrapper">
+      <div class="header-container">
+        <div class="header-logo">
+          <a href="index.html">
+            <span><img src="./assets/icons/saturn2.png" width="30" height="30"></span>
+            <span class="header-logo-text">Stargazer</span>
+          </a>
+        </div>
+        <div class="header-links">
+          <a href="./pages/about.html">About</a>
+          <a href="./blog/blog.html">Blog</a>
+          <a href="./blog/core.html">Core Blog</a>
+          <a href="./blog/tech.html">Tech Blog</a>
+          <a href="./pages/favbibleverse.html">Favorite Bible Verses</a>
+          <a href="./pages/contact.html">Contact</a>
+        </div>
       </div>
+    </header>
+  <!--Header-End-->
+
+<!--#####-HOME PAGE SECTION START-#####-->
+<div class="homepage-container">
+
+      <!--#####-Introduction-#####-->
+      <div class="homepage-introduction">
+        <h1>Kia Ora, I'm Moo. I love durians and I'm stuck in the rabbit hole!</i></h1>
+        <p><i>I am a Follower of Jesus, a Stargazer, a Traveller, an Explorer, full-time procrastinator, and drinker of whisky!</i></p>
+        <a href="./pages/about.html">more..</a>
+      </div>
+      <!--#####-Introduction-#####-->
+
+      <!--#####-BLOG-SECTION-START-#####-->
+      <div class="homepage-latest-blog-posts">
+        <h2>
+          Latest Blog Posts
+          <a class="homepage-latest-blog-posts-view-all" href="./blog/blog.html">View all</a>
+        </h2>
+
+        <div class="homepage-latest-blog-posts-list">
+
+          <!---Post 1--->
+          <a href="./blog/html-css.html">
+            <div class="homepage-latest-blog-post">
+              <div class="homepage-latest-thumbnail">
+                <img src="./assets/icons/css.png" />
+              </div>
+              <div class="homepage-latest-blog-post-title">
+                <h3>CSS Concepts</h3>
+              </div>
+            </div>
+          </a>
+          <!--x-Post 1-x-->
+
+          <!---Post 2--->
+          <a href="./blog/identity-values.html">
+            <div class="homepage-latest-blog-post">
+              <div class="homepage-latest-thumbnail">
+                <img src="./assets/icons/fingerprint-scan.png" />
+              </div>
+              <div class="homepage-latest-blog-post-title">
+                <h3>Identity and Values</h3>
+              </div>
+            </div>
+          </a>
+          <!--x-Post 2-x-->
+
+          <!---Post 3--->
+        <a href="./blog/learning-plan.html">
+            <div class="homepage-latest-blog-post">
+              <div class="homepage-latest-thumbnail">
+                <img src="./assets/icons/coding.png" />
+              </div>
+              <div class="homepage-latest-blog-post-title">
+                <h3>Learning Plan</h3>
+              </div>
+            </div>
+          </a>
+        <!--x-Post 3-x-->
+
+        <!---Post 4--->  
+          <a href="./blog/emotional-intelligence.html">
+            <div class="homepage-latest-blog-post">
+              <div class="homepage-latest-thumbnail">
+                <img src="./assets/icons/emotional-intelligence.png" />
+              </div>
+              <div class="homepage-latest-blog-post-title">
+                <h3>Emotional intelligence</h3>
+              </div>
+            </div>
+          </a>
+          <!--x-Post 4-x-->
+
+          <!---Post 5---> 
+          <a href="./blog/javascript-dom.html">
+            <div class="homepage-latest-blog-post">
+              <div class="homepage-latest-thumbnail">
+                <img src="./assets/icons/javascript.png" />
+              </div>
+              <div class="homepage-latest-blog-post-title">
+                <h3>Javascript Fundamentals</h3>
+              </div>
+            </div>
+          </a>
+          <!--x-Post 5-x-->
+        </div>
+      </div>
+      <!--#####-BLOG-SECTION-END-#####-->
+
+
+      <!--#####-PROJECTS-START-#####-->
+
+      <div class="homepage-projects">
+        <h2>My Projects</h2>
+        <div class="homepage-projects-list">
+
+           <!-- project 1 -->
+          <div class="homepage-project">
+            <h3>
+              <a href="./blog/learning-plan.html">
+                <div class="homepage-project-icon"><img src="./assets/icons/idea.png" width="50" height="50"></div>
+                <div class="homepage-project-title">Learning Plan</div>
+              </a>
+            </h3>
+            <p>Writing a blog for my learning plan</p>
+            <div class="homepage-project-btns">
+              <a class="homepage-project-view-btn" href="./blog/learning-plan.html">View</a>
+            </div>
+          </div>
+          <!-- project 1 -->
+
+          <!-- project 2 -->
+          <div class="homepage-project">
+            <h3>
+              <a href="./blog/html-css.html">
+                <div class="homepage-project-icon"><img src="./assets/icons/idea.png" width="50" height="50"></div>
+                <div class="homepage-project-title">CSS Concepts</div>
+              </a>
+            </h3>
+            <p>Writing a blog for CSS concepts</p>
+            <div class="homepage-project-btns">
+              <a class="homepage-project-view-btn" href="./blog/html-css.html">View</a>
+            </div>
+          </div>
+          <!-- project 2 -->
+
+          <!-- project 3 -->
+          <div class="homepage-project">
+            <h3>
+              <a href="./blog/javascript-dom.html">
+                <div class="homepage-project-icon"><img src="./assets/icons/idea.png" width="50" height="50"></div>
+                <div class="homepage-project-title">Javascript</div>
+              </a>
+            </h3>
+            <p>Writing a blog for Javascript.</p>
+            <div class="homepage-project-btns">
+              <a class="homepage-project-view-btn" href="./blog/javascript-dom.html">View</a>
+            </div>
+          </div>
+          <!-- project 3 -->
+        </div>
+      </div>
+       <!--#####-PROJECTS END-#####-->
     </div>
-    <div>
-      <ul class="nav-items">
-        <li class="nav-link">
-          <a href="#">Who am I?</a>
-        </li>
-        <li class="nav-link">
-          <a href="blog/mainblog.html">Blog</a>
-        </li>
-        <li class="nav-link">
-          <a href="#">Tech Blog</a>
-        </li>
-        <li class="nav-link">
-          <a href="#">Hobbies</a>
-        </li>
-        <li class="nav-link">
-          <a href="#">Contact</a>
-        </li>
-      </ul>
+     <!--#####-HOME PAGE SECTION END-#####-->
+
+    <!--#####FOOTER START#####-->
+    <footer class="footer-wrapper">
+      <div class="footer-links">
+        <a href="./pages/about.html">About</a>
+        <a href="./blog/blog.html">Blogs</a>
+        <a href="./blog/core.html">Core Blog</a>
+        <a href="./blog/tech.html">Tech Blog</a>
+        <a href="./pages/favbibleverse.html">Favorite Bible Verses</a>
+        <a href="./pages/contact.html">Contact</a>
+      </div>
+      <div class="footer-bottom-msg">
+        <a href="index.html">Moo the Stargazer</a>
+      </div>
+      </footer>
+       <!--#####-FOOTER-END-#####-->
   </div>
-  <div class="social text-gray">
-    <a href="https://github.com/moo-kusay" target="_blank"><i class="fa-solid fa-code-compare"></i></a>
-    <a href="https://nz.linkedin.com/in/mookusay" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-    <a href="https://www.instagram.com/moobooklist/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-  </div>
-</nav>
-  <!-------------x--------------- Navigation ----------------x-------------->
+  <!--#####-FOOTER-END-#####-->
 
-  <!------------------------- Main Site Section ----------------------------->
-<main>
-  <!-- Site Title -->
-<section class="site-title">
-  <div class="site-background">
-    <h1>Kia Ora!</h1>
-    <h2>I'm Moo</h2>
-    <p>Welcome to my website</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem tempore exercitationem veniam, expedita facere soluta ea? Ratione nulla deserunt quas.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem tempore exercitationem veniam, expedita facere soluta ea? Ratione nulla deserunt quas.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem tempore exercitationem veniam, expedita facere soluta ea? Ratione nulla deserunt quas.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem tempore exercitationem veniam, expedita facere soluta ea? Ratione nulla deserunt quas.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem tempore exercitationem veniam, expedita facere soluta ea? Ratione nulla deserunt quas.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem tempore exercitationem veniam, expedita facere soluta ea? Ratione nulla deserunt quas.</p>
-    <button class="btn">..more</button>
-  </div>
-
-</section>
-
-
-  <!-- Site Title -->
-</main>
+<!--#####-LAYOUT-END-#####-->
   
-  <!------------------------x Main Site Section x-------------------------->
-
-<!---- Footer-->
-<footer class="footer">
-  <div class="container">
-  <div class="current-project">
-    <h2>Current project</h2>
-    <br>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quisquam nobis aspernatur hic! Non a pariatur voluptas saepe dolores hic.</p>  <!--type Lorem20 and tab-->
-    <br>
-    <a href="#">Find out more</a>
-  </div> 
-  <div class="latest-blog">
-    <h2>Latest Blog</h2>
-    <br>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est maxime, quas beatae neque dolor nihil fugit ab ratione at laboriosam!</p>
-    <br>
-    <a href="#">Find out more</a>
-  </div>
-  <div class="instagram">
-    <h2>Instagram</h2>
-    <div class="flex-row">
-      <img src="assets/1-sun.jpg" alt="insta1">
-      <img src="assets/2-mercury.jpg" alt="insta2">
-      <img src="assets/3-venus.jpg" alt="insta3">
-    </div>
-    <div class="flex-row">
-      <img src="assets/4-earth.jpg" alt="insta4">
-      <img src="assets/5-mars.jpg" alt="insta5">
-      <img src="assets/4.1-moon.jpg" alt="insta6">
-    </div>
-  </div>
-  <div class="follow">
-    <h2>Let's Connect</h2>
-    <br>
-    <div>
-    <a href="https://github.com/moo-kusay" target="_blank"><i class="fa-solid fa-code-compare"></i></a>
-    <a href="https://nz.linkedin.com/in/mookusay" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-    <a href="https://www.instagram.com/moobooklist/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-  </div>
-  </div>
-  <div class="rights flex-row">
-    <h4 class="text-gray">
-      Moo the Stargazer
-    </h4>
-  </div>
-  <div class="move-up">
-    <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
-  </div>
-</footer>
-
-
-
-
-<!--x Footer -->
-
-  <!-- Jquery Library file-->
-  <script src="js/Jquery3.6.1.min.js"></script>
-  
-  <!-- Custom Javascript file-->
-  <script src="js/main.js"></script>
-
 </body>
 </html>
