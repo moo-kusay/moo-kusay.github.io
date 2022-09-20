@@ -6,6 +6,9 @@
 <link rel="stylesheet" type="text/css" href="../styles/header.css"/>
 <link rel="stylesheet" type="text/css" href="../styles/footer.css"/>
 <link rel="stylesheet" type="text/css" href="../styles/post.css"/>
+<link rel="stylesheet" type="text/css" href="../styles/markdown-style.css"/>
+
+
 <!--#####-STYLE-#####-->
 <title>Javascript | DOM </title>
 </head>
@@ -40,44 +43,350 @@
  <div class="blog-post-container">
   
   <div class="blog-post-top-section">
-    <h1>JavaScript and the DOM</h1>
+    <h1>JavaScript Fundamentals</h1>
     <div class="blog-post-top-meta">
-      <span>19/09/2022</span>
+      <span>20/09/2022</span>
     </div> <!-- blog post top meta div-->
   </div> <!-- blog post top section div-->
   
   <!-- blog content goes below -->
   <div class="blog-post-body-content">
-    <h2>Getting Stuck in the Rabbit Hole</h2>
-    <p>Instead of following just-time learning and complete only the learning competencies,
+    <div class="Markdown_markdown__7Dog_">  
+
+    <p>A little story before I start talking about <strong><i>JavaScript</i></strong>, I gotta say I got stucked in the rabit hole, instead of following just-time learning and complete only the learning competencies,
       I redo my blog and staying over the timebox so I am behind and learning all the information all at once is not a good idea.</p>
-
-    <p>I think I'm the only one here amongst the cohorts, so this is for you; future students, stick to the learning competencies, the timebox, and spread out your learning!</p>
-
-    <h2>JavaScript Analogy and its Relationship to HTML and CSS</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, eligendi! Ipsam tempore porro fugiat nihil dolorem dolorum culpa, cumque voluptates?</p>
+    <p>I think I'm the only one here amongst the cohorts, so this is for you; future students, stick to the learning competencies, 
+      the timebox, spread out your learning, and last and not least take care of yourself, take break, get away from the screen, drink water regulary!</p>
+      
+    <p>For this blog,I'll briefly cover <strong><i>JavaScript</i></strong> and as well as other components that makes up a website.</p>
+      
+    <h2>I - the basics</h2>
+      
+      There are three main components that make up a website, 
+      <strong><i>JavaScript</i></strong> is one of them, <strong><i>JavaScript</i></strong> provides a functionality to the website, and among other things,
+       the other two main components of a website include HTML, and CSS, and they're crucial, without each other, we'll have a boring website, we 
+       are very fortunate to live in era where technologies are in their prime, the early days of the web was very boring and not that engaging but it was
+        a very poweful tool, and now with emerging technologies we can do even more with it.</p>
     
-    <h3>Analogy</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur provident officiis consequuntur natus ab sint officia soluta adipisci accusamus eius.</p>
-    <h3>How its relate to HTML and CSS</h3>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, esse quasi facilis soluta itaque iste deserunt! Sunt quae eligendi asperiores.</p>
+      <p>HTML stands for <strong>Hypertext Markup Language</strong> and it is the bedrock of a website that provide the content and structure of a website.</p>
+      
+      <p>CSS stands for <strong>Cascading Stylesheets</strong> and as you may notice the keyword <strong>style</strong> there, 
+        this component provides and makes the <strong>appearance</strong> of a website to pop, like allowing to <strong>style</strong> colours for paragraphs, instead of a plain black and white.
+        It also allow you to place your contents anywhere you like on a website.</p>
     
-    <h2>Control flow and loops</h2>
+    <h2>II - analogy</h2>
+    <p>Since most of us are blessed with a home or an apartment to live in, let's use that as an analogy. For an example,
+      I currently live in a house that include : <strong>One living room, One kitchen, One toliet, One bathroom and Two bedrooms.</strong></p>
+    <p>Everyone have preferences for what their house should look like, let's break this down a little further into their components:</p>
 
+    <ul>
+      <li><strong>Content and Structure</strong> : the bedrock of the house is HTML; the structure where the house is laid on, the walls, floors,
+         ceilings, the foundation piles, frames, and so on. While for contents, we may have TV or no TV, beds,
+          the dinning table, chairs, the sofas, and appliances that we placed in the house.</li>
+      <li><strong>Aesthetic</strong> : this is the appearance of the house, the colour for the walls, the doors, types of floors, 
+        how wide or long the toliet, bathroom, the living room, the bedrooms should be, and whether should be place the bed by the window, and so on.</li>
+      <li><strong>Functionality</strong> : a modern house include power, gas, water, and internet, these entities are an example of a JavaScript
+      that allows you to press the switch on and off for the light, and so on.</li>
+    </ul>
+
+    <!--#####HTML#####-->
+    <h3 id="display-inline">HTML example</h3>
+    <p>HTML code for my house would look like below:</p>
+    
+    <pre class=" language-xml" tabindex="0"><code class=" language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>house</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>living-room</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>living-room</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>kitchen</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>kitchen</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bedroom</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>bedroom</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bedroom</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>bedroom</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bathroom</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>bathroom</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>toilet</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>toilet</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>house</span><span class="token punctuation">&gt;</span></span>
+    </code></pre>
+    <p>
+      The <strong>house</strong> and <strong>it's properties inside the angled brackets</strong>
+      
+      <code><</code>
+      <strong>house</strong>
+      <code>></code>
+      are known as <strong> a tag or tags.</strong>
+    </p>
+
+    <p>
+      Inside the 
+      <code><</code>
+      <strong>house</strong>
+      <code>></code>
+    tag, there is:</p>
+    <p>
+    <code> one living room, one kitchen, two bedrooms, one bathroom, 
+      and one toilet.</code>
+    </p>
+    <p>In HTML, tag or tags are predefiend, such as:</p>
+    <!--ol 1-->
+    <ol>
+      <li>
+    
+      <code><</code>
+      <strong>p</strong>
+      <code>></code>
+      tag - this defines a paragraph.
+    
+    </li>
+<!--ol 2-->
+    <li>
+    
+      <code><</code>
+      <strong>ol</strong>
+      <code>></code>
+      tag - this defines an ordered list.
+    
+    </li>
+<!--ol 3-->
+<li>
+    
+  <code><</code>
+  <strong>h1</strong>
+  <code>></code>
+  to
+  <code><</code>
+  <strong>h6</strong>
+  <code>></code>
+  tags - these are used for the headings.
+
+</li>
+    
+<!--ol 4-->
+<li>
+  <code><</code>
+    <strong>img</strong>
+    <code>></code>
+    tag - is used for images - the image tag required two attributes: src 
+      - it's a path to the image, and the alt - it's an alternate text for the image in case the image can't be displayed.
+  
+  </li>
+
+    
+<!--ol 5-->
+<li>
+  <code><</code>
+    <strong>div</strong>
+    <code>></code>
+    tag - is used to divides a section in the HTML document, usage of div includes:
+    <ul>
+      <li>storing HTML elements - the elements then can be styled with CSS or manipulated with JavaScript</li>
+      <li>the tag can also be styled by using the class or id attribute</li>
+    </ul>
+    <p><i>The p tag, the ol tag, the h1 tag, and img tag can be inside the div tag.</i></p>
+  </li>
+</ol>
+<h4>Example 2</h4>
+<p>HTML code for my bedroom would look like as follow:</p>
+<img src="../assets/screenshots/index-html.png" alt="my-bedroom-example" width="790" height="400.4">
+
+
+    
+    <!--#####HTML#####-->
+
+<!--#####CSS#####-->
+    <h3 id="display-inline">CSS example</h3>
+    <p>My room in CSS as follow:</p>
+    <img src="../assets/screenshots/html-to-dot-room.png" alt="my-bedroom-example" width="790" height="400">
+    <p>The dot <strong>.room </strong>is a CSS class that sets the value and layout of my room (a website layout).</p>
+    <p>The data inside the <strong>curly brackets:</strong></p>
+    <p><strong>position</strong> - this set the layout of a website in a window, and relative
+       means the size of the layout or room in our case will always be set to what we have defined. In our case,
+        we've only defined the width and the height for it, width is set to 400px(pixels) while height is set to 300px(pixels).</p>
+    
+    <p><strong>border</strong> - this set the thickness of the border and set its colour to solid black.</p>
+    
+
+    <h4><i>For the rull CSS code, please visit the following:</i></h4>
+    <a href="../assets/screenshots/html-to-bookcase.png" target="_blank">Image#1</a>
+|
+    <a href="../assets/screenshots/desk-to-bed.png" target="_blank">Image#2</a>
+    
+    
+    <h3 id="display-inline">Output</h3>
+    <p>The following is the output after I linked the CSS file to HTML</p>
+    <img src="../assets/screenshots/html-css-output.png" alt="my-bedroom-example" width="790" height="400.4">
+
+    <h3 id="display-inline">JavaScript</h3>
+    <p>Having a home and accessories in a house is pretty good but it's much better with JavaScript.
+       HTML and CSS are not dynamic, they're static, once a website is loaded there's nothing much you can do but
+      with JavaScript you can do a lot of interactive things - for example in our house analogy we can turn on the oven, the stove when
+    we want to cook something or when it's dark, we can switch the light on or off, and when we need to take shower, we can turn on the switch, and 
+  we can adjust whether it'll be cold or warm. JavaScript allows us to do more than that,
+   it allows us to manipulate and change HTML and CSS a page on the fly, such as the DOM, which I've covered below.</p>
+
+    <div class="about-section"> <!-- using about CSS IDs-->
+      <h5>Source:</h5>
+      <ul>
+        <li><a href="https://zellwk.com/blog/difference-between-html-css-javascript/" target="_blank">Zell</a> – The difference between HTML, CSS, and JavaScript.</li>
+      </ul>
+    </div> 
+    <!--#####CSS#####-->
+    <h2>What is Control Flow?</h2>
+    <p>Control Flow is a process that allows a code to executes but normally code executes from a top-down approach, and sometimes the process 
+      can be interrupted by other process structures, and in programming or scripting languages, those conditions include:</p>
+    <ol>
+      <li><strong>Loops</strong></li>
+      <li><strong>Conditionals</strong></li>
+      <li><strong>Functions</strong></li>
+    </ol>
+    <p>In this post, we'll be only covering loops and functions as they are the main components for us to manipulate HTML and CSS and they provide us a better way
+      to work in web-development.
+    </p>
+    <h3>Loops</h3>
+    <p>Loops are a conditional programming statement that will repeats what the user throws at them until the user condition is met.
+   Loop statements are also recognized as iteration statements by the dev community.</p>
+   
+   <p>The are three types of loops: <strong>For</strong> ,<strong> While</strong> and <strong>Do while</strong></p>
+   <p><strong>for</strong> loop is one of the widely used loop structure among programming languages, instead of rewriting a sequence multiple times, with loop, you can run 
+  write a sequence once and repeats the process until the condition is met.</p>
+  <p>I love tea so an example of making a tea would be as follow:</p>
+  <ol>
+    <li>Grab a cup</li>
+    <li>Fill the kettle with water</li>
+    <li>Switch on the power switch</li>
+    <li>Put the kettle on a base </li>
+    <li>Turn the on switch on the kettle</li>
+    <li>Boil the water in the kettle</li>
+    <li>Pour some of the boiled water into the cup</li>
+    <li>Add milk or Don't add milk to the cup (I sometimes do add milk)</li>
+    <li>Add sugar or Don't add sugar to the cup (no suger for me)</li>
+    <li>Stir the tea, if sugar or milk is added</li>
+    <li>Drink the tea</li>
+  </ol>
+  <p>Some of the steps need to be in a sequential order but some of the other steps can be change vice versa.</p>
+  <!-- source-->
+  <div class="about-section"> <!-- using about CSS IDs-->
+    <h5>Source:</h5>
+    <ul>
+      <li><a href="https://codeinstitute.net/global/blog/control-flow-in-javascript/" target="_blank">Code Institute</a> – Control Flow in JavaScript.</li>
+    </ul>
+  </div> 
+    
+    <h3>What is a Function?</h3>
+    <p>Just like we're making tea, we're going to make a sandwhich with the function. 
+      In any of the programming languages,functions are part of the critical components, but it can be hard to 
+    understand without other prior programming knowledge. I am still grapsing my mind around it but I'll try to explain it
+  as much as I can.</p>
+
+  <p>With any sort of food; like a Sandwich for an example, we need:</p>
+  <ul>
+    <li>a specific set of ingredients.</li>
+    <li>to perform a specific procedure using those ingredients</li>
+    <li>finally after all of that we get the final product; the sandwhich</li>
+  </ul>
+
+  <p>Like any other recipe, it can be reuse over and over again on a set of ingredients, 
+    this can be apply to a function as well.</p>
+
+  <p>These ingredients in function are called parameters. See example 1. </p>
+  <h3>Example 1 - Visual Ingredients/Parameters</h3>
+  <img src="../assets/screenshots/function-makeSandwich.png" alt="function-makeSandwich" width="790" height="400.4">
+  <p>In the diagram, a declaration is made to declare makeSandwich function, the return for this is a full sandwich,
+     some functions return a value, and other functions do not, that is because there's no new product
+      to be return, rather we change a value that already existed in the script, and rerun it in a new format, 
+      when we are declaring a function we basically recording the recipe on how to make a sandwich.</p>
+
+  <p>Now, let's make some sandwich!</p>
+
+  <h2>Creating a Ham Sandwich</h2>
+  <p>In order to create or return  a complete sandwich, we need to do three things.</p>
+  <ol>
+    <li>We need to declare a function</li>
+    <li>We need to store the value of the sandwich</li>
+    <li>We need to call or return the completed sandwich</li>
+  </ol>
+  <h3>I - Declaring a Function</h3>
+  <p>In this plain text or string example, we're creating a makeSandwich function that take three parameters:</p>
+  <p>A meat, a vegetable and bread, that produce a sandwich or sandwiches.</p>
+  <img src="../assets/screenshots/function-makeSandwich-text-parameters.png" alt="function-makeSandwich" width="790" height="400.4">
+   
+  
+  <h3>II - Create and Store Variables</h3>
+  <p>We create new variables to store the final sandwich, the parameters 
+    will still be the same, there's still be meat, vegetable, and bread, and as mentioned earlier 
+    the return value won't be the same because we can make a variation of sandwiches with the three ingredients and reuse it 
+    over and over again - ham sandwich, tuna sandwich, and chicken sandwich etc.</p>
+  <p>In the diagram, the variable meat1 holds a string of value of Ham, etc.</p>
+  <img src="../assets/screenshots/variables-as-arguments.png" alt="function-makeSandwich" width="790" height="400.4">
+  
+
+  <h3>III - Call Function</h3>
+  <p>Finally, the last step, we are calling the sandwich, and we're using the variables(meat1, veg1, bread1)
+     as arguments (ham, lettuce, wheat).
+     In the figure below, we're calling the makeSandwich function and store the result in hamSandwich.</p>
+  <img src="../assets/screenshots/call-function.png" alt="function-makeSandwich" width="790" height="400.4">
+
+  <h2>Why Functions are useful?</h2>
+  <p>They allow you to create one set of function of paramenters, and allows you to reuse this again and again, 
+    so you don't have to retype the code again. Just like we can
+     make all types of sandwhich from one function declaration makeSandwich.</p>
+
+  <!-- source-->
+  <div class="about-section"> <!-- using about CSS IDs-->
+    <h5>Source:</h5>
+    <ul>
+      <li><a href="https://www.codeanalogies.com/javascript-functions-explained" target="_blank">CodeAnalogies</a> – JavaScript Functions Explained by Making a Recipe [Interactive Explanation].</li>
+    </ul>
+  </div> 
+  
+  <h2>Arrays and Objects</h2>
+  <h3>What is an Arrays?</h3>
+  <p>According to W3Schools, an array is a unique variable that hold more than one value. 
+    So, instead of creating mulitple single car, we can create one variable name cars and store
+     many values in it.</p>
+  <p>And if we need to search through 500 cars, we can do that by using the index number.
+     Index number start counting from zero[0], car number would be under index[0].</p>
+  <img src="../assets/screenshots/js-arrays.png" alt="function-makeSandwich" width="790" height="400.4">
+  <h3>What are Objects?</h3>
+  <p>A real world example of an object is a car. The make, model, the colour, and weight of a car is known 
+    as properties. While the ability to start, drive, break and stop are known as Methods.</p>
+  <img src="../assets/screenshots/car-object.png" alt="function-makeSandwich" width="790" height="400.4">
+
+    <!-- source-->
+    <div class="about-section"> <!-- using about CSS IDs-->
+      <h5>Source:</h5>
+      <ul>
+        <li><a href="https://www.w3schools.com/default.asp" target="_blank">W3Schools</a></li>
+      </ul>
+    </div> 
+
+    
     <h2>What is the DOM?</h2>
-    <h3>The DOM is:</h3>
-    <h3>How to interact with it:</h3>
+    <p>DOM stands for The Document Object Model, it is a programming
+       interface for HTML and represents an entire HTML document as a single object, the DOM allow us to access and manipulate the contents of the HTML document with JavaScript.</p>
+       <ul>
+        <li>the ability to add/change/remove HTML elements</li>
+        <li>the ability to add/change/remove HTML attributes</li>
+        <li>the ability to add/change/remove CSS styles</li>
+        <li>the ability to react to HTML events</li>
+        <li>the ability to add/change/remove HTML events</li>
+       </ul>
+    <p>Everytime an HTML document (i.e home.html) get loaded on the internet browser, 
+      it becomes a document object. The document object is the great-great-great-grandparent of the HTML document.</p>
+    <p>The objects in the HTML document is group together in a logical, hierarchical way, like a tree.</p>
+    <img src="../assets/screenshots/the-dom-tree.png" alt="function-makeSandwich" width="790" height="400.4">
 
-    <h2>Arrays and Objects</h2>
-    <p>Text</p>
-    <h4>Arrays</h4>
-    <h4>Objects</h4>
-    <h2>Functions</h2>
-    <h3>What are functions</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum necessitatibus autem optio. Culpa adipisci vel fuga sed animi in cumque. Ad recusandae tempore et porro incidunt inventore possimus molestias vel!</p>
-    <h3>Why are they helpful</h3>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, temporibus aspernatur! Magnam perferendis illo laboriosam deleniti architecto asperiores nihil accusamus?</p>
+    <p>In the figure above, the head element has 1 child element, while the body element has 6 child elements.</p>
+
+    <h3>How to interact with it:</h3>
+    <p>We can interect with the DOM by accessing the browser developer tools (F12 on Windows), we can find HTML elements by id, tag name, class name, CSS selectors, and object collections.</p>
+    <!-- source-->
+    <div class="about-section"> <!-- using about CSS IDs-->
+      <h5>Source:</h5>
+      <ul>
+        <li><a href="https://www.w3schools.com/whatis/whatis_htmldom.asp" target="_blank">W3Schools</a> - What is the HTML DOM?</li>
+        <li><a href="https://www.digitalocean.com/community/tutorials/introduction-to-the-dom#introduction" target="_blank">DigitalOcean</a>  - Introduction to the DOM</li>
+      </ul>
+    </div> 
+
+   
+     
   </div>
+  <div class="Markdown_markdown__7Dog_"> 
   <!-- blog content goes above -->
 
   
